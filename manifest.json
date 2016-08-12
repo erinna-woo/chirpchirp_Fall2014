@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Cecil",
+  "description": "This extension makes Cecil appear",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "js": ["js/jquery-2.0.3.min.js","cecil.js"],
+      "run_at": "document_start"
+    }
+  ]
+ 
+ }
